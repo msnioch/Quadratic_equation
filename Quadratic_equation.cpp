@@ -28,6 +28,14 @@ vector<double> A, B, C;
 
 int main()
 {
+    cout << "########## Quadratic equation ##########" << endl;
+
+    cout << "Enter lines with numbers A, B, C of Quadratic equation to solve." << endl;
+
+    cout << "Example: 0.3x^2 + 0.3x + 0.4 = 0 >> enter >> 0.3 0.3 0.4" << endl;
+    
+    cout << "Separate the numbers with Space and the lines with Enter." << endl;
+
     string temporaryString;
 
     size_t lineNumber = 0;
