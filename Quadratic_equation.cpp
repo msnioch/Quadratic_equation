@@ -30,7 +30,7 @@ int main()
 {
     cout << "########## Quadratic equation ##########" << endl;
 
-    cout << "Enter lines with numbers A, B, C of Quadratic equation to solve." << endl;
+    cout << "Enter lines with numbers A, B, C of quadratic equation to solve." << endl;
 
     cout << "Example: 0.3x^2 + 0.3x + 0.4 = 0 >> enter >> 0.3 0.3 0.4" << endl;
     
@@ -42,7 +42,7 @@ int main()
 
     getline(cin, temporaryString);
 
-    while (temporaryString != "")
+    while (temporaryString.length() > 0)
     {
         A.push_back(stod(temporaryString.substr(0, temporaryString.find(" "))));
 
@@ -51,6 +51,10 @@ int main()
         B.push_back(stod(temporaryString.substr(0, temporaryString.find(" "))));
 
         C.push_back(stod(temporaryString.substr(temporaryString.find(" ") + 1)));
+
+        cout << "Enter next line with numbers A, B, C of quadratic equation or" << endl;
+
+        cout << "push Enter to compute the solve of quadratic equation." << endl;
 
         getline(cin, temporaryString);
     }
